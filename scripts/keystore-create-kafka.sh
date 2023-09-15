@@ -30,6 +30,7 @@ do
     # Sign server certificate with CA
     openssl x509 -req \
     -days 3650 \
+    -sha256 \
     -in $i-creds/$i.csr \
     -CA ca.crt \
     -CAkey ca.key \
